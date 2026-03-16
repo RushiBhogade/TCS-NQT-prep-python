@@ -7,3 +7,13 @@ while i< len(arr):
     else:
         i+=1
 print(arr)    
+
+
+
+#second method
+
+for i in range(len(arr)):
+    if arr[i]==0:
+        arr.remove(0)
+        arr.append(0)
+print(arr)
