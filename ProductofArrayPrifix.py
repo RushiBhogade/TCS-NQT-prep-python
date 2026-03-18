@@ -8,13 +8,13 @@ right=[1]*len(arr)
 
 
 for i in range(1,len(arr)):
-    left[i]=left[i+1]*arr[i+1]
+    left[i]=left[i-1] * arr[i-1]
 
 for i in range(len(arr)-2,-1,-1):
-    right[i]=right[i-1]*arr[i]    
+    right[i]=right[i+1] * arr[i+1]    
 
 Result=[]
 
 for i in range(len(arr)):
-    Result[i]=left[i]*right[i]
+    Result.append(left[i] * right[i])
 print(Result)    
