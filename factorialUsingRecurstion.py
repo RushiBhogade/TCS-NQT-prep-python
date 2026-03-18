@@ -28,3 +28,23 @@ def fibonacci(n):
             return fibonacci(n-1)+fibonacci(n-2)
 print(fibonacci(10))
 
+
+# factroial without division and multiplication
+
+
+def countsum(sumss,n):
+    result=0
+    for i in range(n):
+        result+=sumss
+    return result    
+        
+
+def factroiral(n):
+    sums=1
+    for i in range(1,n+1):
+        sums=countsum(sums,i)
+    return sums    
+
+print(factroiral(5))
+    
+
